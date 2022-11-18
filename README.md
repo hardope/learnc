@@ -1,0 +1,3 @@
+# learnc
+
+Learning c language

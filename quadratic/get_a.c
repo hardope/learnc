@@ -9,7 +9,6 @@ float get_a(char b)
 {
      float a;
      
-
      printf("Value of %c: ", b);
      scanf("%f", &a);
 

@@ -13,9 +13,32 @@ void encrypt(char c[100], int key)
           }
           else
           {
-               c[i]+=key;
-               c[i] % 127;
-               printf("%i", c[i] % 127);
+               if (c[i] > 64 && c[i] < 91)
+               {
+                    if ((c[i] + key) > 91)
+                    {
+                         c[i] = (c[i] + key) - 26;
+                    }
+                    else{
+                         c[i]+=key;
+                    }
+                    printf("%c", c[i]);
+               }
+               else if (c[i] > 96 && c[i] < 123)
+               {
+                    if ((c[i] + key) > 123)
+                    {
+                         c[i] = (c[i] + key) - 26;
+                    }
+                    else{
+                         c[i]+=key;
+                    }
+                    printf("%c", c[i]);
+               }
+               else
+               {
+                    printf("%c", c[i]);
+               }
           }
      }
 }

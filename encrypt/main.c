@@ -9,9 +9,8 @@ int main (void)
 
      get_input(text);
      key = get_key();
+
+     printf("Encrypted Text: ");
      encrypt(text, key);
 
-     
-     printf("Encrypted Text: ");
-     printf("%s", text);
 }

@@ -1,5 +1,7 @@
 #include <stdio.h>
-
+/**
+ * print_data - Fetch all contacts from file and print
+*/
 void print_data()
 {
      FILE *file;

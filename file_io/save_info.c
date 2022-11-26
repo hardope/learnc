@@ -1,5 +1,10 @@
 #include <stdio.h>
-
+/**
+ * save_info - Store new contact
+ * 
+ * @name: Name of contact to be stored
+ * @number: phone number of user to be stored
+*/
 void save_info(char name[100], char number[100])
 {
      FILE *file;

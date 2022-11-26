@@ -1,6 +1,10 @@
 #include "main.h"
 #include <stdio.h>
-
+/**
+ * main - A program to save contacts, using a text file as storage
+ * 
+ * Return: 0, Success
+*/
 int main(void)
 {
      char name[100], number[100];
@@ -14,4 +18,5 @@ int main(void)
 
      printf("\nContacts\n");
      print_data();
+     return (0);
 }

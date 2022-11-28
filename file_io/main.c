@@ -7,16 +7,41 @@
 */
 int main(void)
 {
-     char name[100], number[100];
+     int a = 0;
+     int command;
 
-     printf("Name: ");
-     scanf("%s", &name);
-     printf("Number: ");
-     scanf("%s", &number);
-     printf("%s : %s", name, number);
-     save_info(name, number);
+     while (a == 0)
+     {
+          printf("Command: ");
+          scanf("%i", &command);
 
-     printf("\nContacts\n");
-     print_data();
+          if (command == 0)
+          {
+               char name[100], number[100];
+               printf("\n");
+               printf("Name: ");
+               scanf("%s", &name);
+               printf("Number: ");
+               scanf("%s", &number);
+               save_info(name, number);
+          }
+          else if (command == 1)
+          {
+               printf("\nContacts\n");
+               print_data();
+               printf("\n");
+          }
+          else if (command == 2)
+          {
+               a += 1;
+          }
+
+          else
+          {
+               printf("Invalid Command\n");
+          }
+     }
+
+
      return (0);
 }
